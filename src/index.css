@@ -267,3 +267,38 @@ ul {
     display: block;
   }
 }
+.footer {
+  color: var(--white);
+  background-color: var(--black);
+  position: sticky;
+  top: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+}
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+.layout {
+  min-height: 100vh;
+}
+.social-icons a {
+  font-size: x-large;
+  margin: 0 1rem;
+}
+.whatsapp {
+  color: #059669;
+}
+.whatsapp:hover {
+  box-shadow: 0 0 10px 3px var(--primary-500);
+}
+.linkedin {
+  color: #0a66c2;
+}
+.twitter {
+  color: #1d9bf0;
+}
+.github {
+  color: white;
+}
