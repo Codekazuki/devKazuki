@@ -21,7 +21,11 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a className='github' href='https://github.com/Codekazuki'>
+          <a
+            className='github'
+            target='_blank'
+            href='https://github.com/Codekazuki'
+          >
             <FaGithub />
           </a>
         </li>
