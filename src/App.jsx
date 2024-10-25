@@ -39,6 +39,10 @@ const router = createBrowserRouter([
         path: "experience",
         element: <Experience />,
       },
+      {
+        path: "resume",
+        element: <Resume />,
+      },
     ],
   },
 ]);

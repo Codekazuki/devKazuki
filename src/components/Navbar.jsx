@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-
+import { FaDownload } from "react-icons/fa";
 const Navbar = () => {
   return (
     <div className='nav-center'>
@@ -19,6 +19,12 @@ const Navbar = () => {
         </NavLink>
         <NavLink to='contactus' className='nav-link'>
           Contact Us
+        </NavLink>
+        <NavLink to='resume' className='nav-link btn'>
+          <span>Resume</span>
+          <span>
+            <FaDownload />
+          </span>
         </NavLink>
       </div>
     </div>
