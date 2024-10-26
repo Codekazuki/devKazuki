@@ -1,8 +1,8 @@
 const Card = ({ name, image, role, role2 }) => {
   return (
-    <div>
+    <div className='card'>
       <div>
-        <img src={image} alt='' />
+        <img src={image} alt='' width='96px' />
       </div>
       <div>
         <h1>{name}</h1>
