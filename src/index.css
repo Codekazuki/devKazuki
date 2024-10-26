@@ -375,22 +375,32 @@ form .input-box .field.message {
 }
 .card {
   display: grid;
-  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  height: 8rem;
+  background-color: var(--primary-100);
+}
+.card:hover {
+  opacity: 0.8;
   background-image: conic-gradient(
-    var(--primary-100),
     var(--primary-200),
     var(--primary-300),
-    /* var(--primary-400), */ var(--primary-100),
     var(--primary-200),
     var(--primary-300)
   );
-  height: 100%;
-  border-radius: 1ch;
-  text-align: center;
-}
-....card:hover {
-  opacity: 0.8;
-  background-image: conic-gradient(blue, #1d1d80, rgb(132, 64, 64), red);
+
   border-radius: 4px;
   letter-spacing: 2px;
+}
+.card-logo {
+  display: grid;
+  place-items: center;
+}
+.card h3 {
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-weight: 400;
+}
+.card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

@@ -1,17 +1,10 @@
 export const recentCompany = [
   {
-    name: "Bi-Set Technologies",
-    id: 4,
-    role: "Facilitator",
-
-    image: "pacific.png",
-  },
-  {
-    name: "Prunedge",
+    name: "Prunedge Technologies",
     id: 1,
     role: "Software Trainee",
     role2: "Software Engineer",
-    image: "gomycode.png",
+    image: "prunedge.png",
   },
   {
     name: "GomyCode",
@@ -23,6 +16,13 @@ export const recentCompany = [
     name: "Pacific Professinals",
     id: 3,
     role: "Software Engineer",
+    image: "pacific.png",
+  },
+  {
+    name: "Bi-Set Technologies",
+    id: 4,
+    role: "Facilitator",
+
     image: "pacific.png",
   },
 ];
