@@ -47,7 +47,14 @@ const ContactUs = () => {
             placeholder='your message'
           ></textarea>
         </div>
-        <button className='btn-submit'>Submit</button>
+        <button
+          className='btn-submit'
+          onSubmit={() => {
+            console.log("submitted");
+          }}
+        >
+          Submit
+        </button>
       </form>
     </section>
   );
