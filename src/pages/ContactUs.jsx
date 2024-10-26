@@ -12,26 +12,37 @@ const ContactUs = () => {
             name='name'
             className='field'
             type='text'
+            id='name'
             required
-            placeholder='your name'
+            placeholder='Input your name'
           />
         </div>
         <div className='input-box'>
-          <label htmlFor=''>Email</label>
+          <label htmlFor='email'>Email</label>
           <input
+            id='email'
             name='email'
             className='field'
             type='email'
             required
-            placeholder='yor email'
+            placeholder='Input your email'
           />
         </div>
         <div className='input-box'>
-          <label htmlFor=''>Message</label>
+          <label htmlFor='interest'>What are you interested in?</label> <br />
+          <select name='interest' className='field-interest' id='interest'>
+            <option value='webdev'>Web Development</option>
+            <option value='trainig'>Training</option>
+            <option value='others'>Others</option>
+          </select>
+        </div>
+
+        <div className='input-box'>
+          <label htmlFor='message'>Message</label>
           <textarea
             className='field message'
             name='message'
-            id=''
+            id='message'
             required
             placeholder='your message'
           ></textarea>
