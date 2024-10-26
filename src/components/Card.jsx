@@ -5,9 +5,9 @@ const Card = ({ name, image, role, role2 }) => {
         <img src={image} alt='' width='96px' />
       </div>
       <div>
-        <h1>{name}</h1>
-        <h3>{role}</h3>
-        <h3>{role2}</h3>
+        <h1> Company:{name}</h1>
+        <h3>Role:{role}</h3>
+        {role2 && <h3>Role:{role2}</h3>}
       </div>
     </div>
   );

@@ -370,18 +370,25 @@ form .input-box .field.message {
 }
 .card-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(475px, 1fr));
   gap: 1rem;
 }
 .card {
   display: grid;
   place-items: center;
-  background-image: conic-gradient(red, rgb(132, 64, 64), #1d1d80, blue);
+  background-image: conic-gradient(
+    var(--primary-100),
+    var(--primary-200),
+    var(--primary-300),
+    /* var(--primary-400), */ var(--primary-100),
+    var(--primary-200),
+    var(--primary-300)
+  );
   height: 100%;
   border-radius: 1ch;
   text-align: center;
 }
-.card:hover {
+....card:hover {
   opacity: 0.8;
   background-image: conic-gradient(blue, #1d1d80, rgb(132, 64, 64), red);
   border-radius: 4px;

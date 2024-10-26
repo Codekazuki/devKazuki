@@ -10,7 +10,12 @@ const Experience = () => {
       </section>
     );
   });
-  return <div className='card-list'>{experienceChart}</div>;
+  return (
+    <section>
+      <h1>Experiences </h1>
+      <div className='card-list'>{experienceChart}</div>
+    </section>
+  );
 };
 
 export default Experience;
