@@ -7,7 +7,7 @@ const ContactUs = () => {
       >
         <h1>Contact Form</h1>
         <div className='input-box'>
-          <label htmlFor='name'>Full name</label>
+          <label htmlFor='name'>Full Name</label>
           <input
             name='name'
             className='field'
