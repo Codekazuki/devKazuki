@@ -249,15 +249,22 @@ ul {
   margin-bottom: 2rem;
   font-weight: 700;
 }
-.hero-title p {
+.hero-title h3 {
   line-height: 2;
   max-width: 35em;
   color: var(--grey-400);
 }
+
 @media (min-width: 992px) {
   .hero-center {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    place-items: center;
+    gap: 4rem;
+  }
+  .hero-centerb {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     place-items: center;
     gap: 4rem;
   }
