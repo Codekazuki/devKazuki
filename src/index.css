@@ -97,7 +97,7 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1.25rem, 2.5vw, 2.5rem); /* Small heading */
+  font-size: clamp(1rem, 1.5vw, 2.5rem); /* Small heading */
 }
 
 h4 {

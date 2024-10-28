@@ -87,7 +87,7 @@ const About = () => {
       <section className='hero'>
         <div className='hero-center'>
           <div className='hero-title'>
-            <h2 className='pre-point'>{prePoint5}</h2>
+            <h1 className='pre-point'>{prePoint5}</h1>
             <h3>{point5}</h3>
           </div>
           <div className='img-container'>
