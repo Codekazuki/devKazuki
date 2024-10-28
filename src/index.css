@@ -144,7 +144,6 @@ ul {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 1rem 2rem;
 }
 .logo {
@@ -384,6 +383,43 @@ form .input-box .field.message {
   flex-direction: column;
   justify-content: center;
 }
+.resume-div {
+  text-align: center;
+  margin: 20px;
+}
+
+.resume-text {
+  color: var(--black);
+  margin-bottom: 15px;
+  transition: var(--transition);
+}
+
+.resume-text:hover {
+  color: var(--primary-400);
+}
+
+.resume-button {
+  background-color: var(--primary-400);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.resume-button:hover {
+  transform: scale(1.05);
+  background-color: var(--white);
+  color: var(--primary-400);
+}
+
+/* Button active effects */
+.resume-button:active {
+  transform: scale(0.95); /* Slightly decrease size when clicked */
+}
+
 @media (min-width: 320px) {
   .nav-center {
     flex-direction: row;
