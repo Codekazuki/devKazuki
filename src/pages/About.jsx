@@ -1,4 +1,3 @@
-import image from "../assets/hello.svg";
 import teaching from "../assets/teaching.svg";
 import deadline from "../assets/deadline.svg";
 import devguy from "../assets/dev-guy.svg";
