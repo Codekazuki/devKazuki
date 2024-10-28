@@ -49,9 +49,9 @@ html {
   --borderRadius: 0.25rem;
   --letterSpacing: 1px;
   --transition: 0.3s ease-in-out all;
-  --max-width: 1120px;
+  --max-width: 1024px;
   --fixed-width: 600px;
-  --view-width: 90vw;
+  --view-width: 100vw;
   /* box shadow*/
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -144,6 +144,7 @@ ul {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 1rem 2rem;
 }
 .logo {
@@ -247,7 +248,7 @@ ul {
 
 .footer {
   color: var(--white);
-  background-color: var(--black);
+  background-color: var(--grey-800);
   position: sticky;
   top: 100%;
   display: flex;
@@ -388,7 +389,6 @@ form .input-box .field.message {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: purple;
   }
 }
 @media (min-width: 375px) {
@@ -396,7 +396,12 @@ form .input-box .field.message {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: yellow;
+
+    width: 100%;
+  }
+  .img-container {
+    display: block;
+    width: 50%;
   }
 }
 @media (min-width: 425px) {
@@ -404,7 +409,6 @@ form .input-box .field.message {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: green;
     width: 100%;
   }
   .hero-center {
@@ -430,7 +434,6 @@ form .input-box .field.message {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
   }
   .nav-links {
     flex-direction: row;

@@ -3,9 +3,11 @@ import { FaRegFileAlt } from "react-icons/fa";
 const Navbar = () => {
   return (
     <div className='nav-center'>
-      <NavLink to='/'>
-        <span className='logo'>CodeKazuki</span>
-      </NavLink>
+      <div>
+        <NavLink to='/'>
+          <span className='logo'>CodeKazuki</span>
+        </NavLink>
+      </div>
 
       <div className='nav-links'>
         <NavLink to='/' className='nav-link'>
