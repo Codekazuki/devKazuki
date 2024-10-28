@@ -5,7 +5,13 @@ import { FaWhatsapp } from "react-icons/fa6";
 const Footer = () => {
   return (
     <div className='footer'>
-      <h5>agbowurotoyin8@gmail.com</h5>
+      <div className='footer-mail'>
+        <h5>agbowurotoyin8@gmail.com</h5>
+        <p>
+          Copyright &copy; 2024 Made by
+          <a href='https://github.com/Codekazuki'> Ayodele </a>
+        </p>
+      </div>
       <ul className='social-icons'>
         <li>
           <a className='twitter' href='https://x.com/Coachkazuki'>
@@ -39,10 +45,6 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-      <p>
-        Copyright &copy; 2024 Made by
-        <a href='https://github.com/Codekazuki'> Ayodele </a>
-      </p>
     </div>
   );
 };
