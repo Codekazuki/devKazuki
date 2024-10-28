@@ -349,40 +349,52 @@ form .input-box .field.message {
 }
 .card-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(475px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  margin: 0 auto;
 }
-.card {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 8rem;
-  background-color: var(--primary-100);
-}
-.card:hover {
-  opacity: 0.8;
-  background-image: conic-gradient(
-    var(--primary-200),
-    var(--primary-300),
-    var(--primary-200),
-    var(--primary-300)
-  );
 
-  border-radius: 4px;
-  letter-spacing: 2px;
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, var(--primary-200), var(--primary-300));
+  border-radius: 8px;
+  transition: var(--transition);
 }
+
+.card:hover {
+  transform: translateY(-12px);
+}
+
 .card-logo {
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.card-logo img {
+  width: 100px;
+  height: auto;
+}
+
 .card h3 {
-  font-size: clamp(1.2rem, 2vw, 2rem);
-  font-weight: 400;
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  font-weight: 500;
+  color: var(--text-color);
+  margin: 0;
 }
+
 .card-details {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-right: 1rem;
 }
+
 .resume-div {
   text-align: center;
   margin: 20px;
@@ -463,6 +475,9 @@ form .input-box .field.message {
     display: block;
     width: 50%;
   }
+  .card-list {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (min-width: 768px) {
@@ -489,5 +504,8 @@ form .input-box .field.message {
   }
   .img-container {
     display: block;
+  }
+  .card-list {
+    grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
   }
 }
