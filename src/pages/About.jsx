@@ -26,7 +26,7 @@ const point5 =
 const About = () => {
   return (
     <section className='about'>
-      <h3>About Me</h3>
+      <h1 style={{ textAlign: "center", padding: "2rem" }}>About Me</h1>
       <section className='hero'>
         <div className='hero-center'>
           <div className='hero-title'>
@@ -37,7 +37,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <h3>{keyQual}</h3>
+      <h1 style={{ textAlign: "center" }}>{keyQual}</h1>
 
       {/* add undraw images */}
       <section className='hero'>

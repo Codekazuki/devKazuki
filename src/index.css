@@ -221,12 +221,13 @@ ul {
 }
 
 .hero {
-  min-height: 75vh;
+  min-height: 50vh;
   background: var(--grey-100);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 .img-container {
   margin-top: 1rem;
@@ -236,7 +237,7 @@ ul {
   max-width: var(--max-width);
 }
 .hero-title h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: 700;
 }
 .hero-title h3 {
@@ -427,9 +428,8 @@ form .input-box .field.message {
   color: var(--primary-400);
 }
 
-/* Button active effects */
 .resume-button:active {
-  transform: scale(0.95); /* Slightly decrease size when clicked */
+  transform: scale(0.95);
 }
 
 @media (min-width: 320px) {
@@ -449,7 +449,6 @@ form .input-box .field.message {
   }
   .img-container {
     display: block;
-    width: 50%;
   }
 }
 @media (min-width: 425px) {
@@ -463,17 +462,14 @@ form .input-box .field.message {
     display: grid;
     /* grid-template-columns: 1fr 1fr; */
     place-items: center;
-    gap: 4rem;
   }
   .hero-centerb {
     display: grid;
     /* grid-template-columns: 1fr 1fr; */
     place-items: center;
-    gap: 4rem;
   }
   .img-container {
     display: block;
-    width: 50%;
   }
   .card-list {
     grid-template-columns: 1fr;
@@ -500,7 +496,7 @@ form .input-box .field.message {
     display: grid;
     grid-template-columns: 1fr 2fr;
     place-items: center;
-    gap: 4rem;
+    gap: 2rem;
   }
   .img-container {
     display: block;
