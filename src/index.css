@@ -252,12 +252,16 @@ ul {
   position: sticky;
   top: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 5rem;
+  width: 100%;
 }
 .footer-mail {
   display: grid;
   place-items: center;
+}
+.footer-mail a {
+  color: var(--primary-500);
 }
 .social-icons {
   display: flex;
@@ -275,7 +279,6 @@ ul {
   transition: var(--transition);
 }
 .whatsapp:hover {
-  filter: drop-shadow(10px 10px 10px var(--primary-500));
 }
 .linkedin {
   color: #0a66c2;

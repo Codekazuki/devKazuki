@@ -1,10 +1,11 @@
 const ContactUs = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("submitted");
+  };
   return (
     <section className='contact'>
-      <form
-        action='https://formsubmit.co/dafaa4fb0da7c628c36f29b1a0be4eed'
-        method='POST'
-      >
+      <form onSubmit={handleSubmit}>
         <h1>Contact Form</h1>
         <div className='input-box'>
           <label htmlFor='name'>Full Name</label>
@@ -47,14 +48,7 @@ const ContactUs = () => {
             placeholder='your message'
           ></textarea>
         </div>
-        <button
-          className='btn-submit'
-          onSubmit={() => {
-            console.log("submitted");
-          }}
-        >
-          Submit
-        </button>
+        <button className='btn-submit'>Submit</button>
       </form>
     </section>
   );
