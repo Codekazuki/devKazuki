@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { FaRegFileAlt } from "react-icons/fa";
+import ThemeToggle from "./ThemeToggle";
 const Navbar = () => {
   return (
     <div className='nav-center'>
@@ -28,6 +29,7 @@ const Navbar = () => {
           </span>
           <span>Resume</span>
         </NavLink>
+        <ThemeToggle />
       </div>
     </div>
   );
