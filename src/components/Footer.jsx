@@ -9,17 +9,31 @@ const Footer = () => {
         <h5>agbowurotoyin8@gmail.com</h5>
         <p>
           Copyright &copy; 2024 Made by
-          <a href='https://github.com/Codekazuki'> Ayodele </a>
+          <a
+            rel='noopener noreferrer'
+            target='_blank'
+            href='https://github.com/Codekazuki'
+          >
+            {" "}
+            Ayodele{" "}
+          </a>
         </p>
       </div>
       <ul className='social-icons'>
         <li>
-          <a className='twitter' href='https://x.com/Coachkazuki'>
+          <a
+            rel='noopener noreferrer'
+            target='_blank'
+            className='twitter'
+            href='https://x.com/Coachkazuki'
+          >
             <FaTwitter />
           </a>
         </li>
         <li>
           <a
+            rel='noopener noreferrer'
+            target='_blank'
             className='linkedin'
             href='https://www.linkedin.com/in/ayodele-agbowuro-74000358/'
           >
@@ -28,8 +42,9 @@ const Footer = () => {
         </li>
         <li>
           <a
-            className='github'
+            rel='noopener noreferrer'
             target='_blank'
+            className='github'
             href='https://github.com/Codekazuki'
           >
             <FaGithub />
@@ -37,6 +52,8 @@ const Footer = () => {
         </li>
         <li>
           <a
+            rel='noopener noreferrer'
+            target='_blank'
             className='whatsapp'
             href='https://wa.me/2348069477780
 '
