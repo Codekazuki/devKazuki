@@ -11,6 +11,7 @@ const Navbar = () => {
       </div>
 
       <div className='nav-links'>
+        <ThemeToggle />
         <NavLink to='/' className='nav-link'>
           Home
         </NavLink>
@@ -29,7 +30,6 @@ const Navbar = () => {
           </span>
           <span>Resume</span>
         </NavLink>
-        <ThemeToggle />
       </div>
     </div>
   );

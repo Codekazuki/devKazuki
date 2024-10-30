@@ -1,4 +1,6 @@
-import React, { useContext, createContext, useState, useEffect } from "react";
+/* eslint react/prop-types: 0 */
+
+import { useContext, createContext, useState, useEffect } from "react";
 
 const AppContext = createContext();
 

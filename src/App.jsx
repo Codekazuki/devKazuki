@@ -8,6 +8,7 @@ import {
   Project,
   Resume,
 } from "./pages";
+import { AppProvider } from "./context";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <AppProvider>
+      <RouterProvider router={router} />;
+    </AppProvider>
+  );
 };
 export default App;
