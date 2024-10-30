@@ -5,7 +5,7 @@ import { useGlobalContext } from "../context";
 const ThemeToggle = () => {
   const { isDarkTheme, toggleDarkTheme } = useGlobalContext();
   return (
-    <section className='toggle-container'>
+    <section>
       <button className='dark-toggle' onClick={toggleDarkTheme}>
         {isDarkTheme ? (
           <CiLight className='toggle-icon-light dark-theme ' />

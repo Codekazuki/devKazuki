@@ -502,6 +502,25 @@ form .input-box .field.message {
   background-color: var(--primary-500);
   border-radius: 50%;
 }
+.dark-theme {
+  background-color: var(--grey-700);
+  color: var(--grey-100);
+}
+
+.dark-toggle {
+  background: transparent;
+  border-color: transparent;
+  width: 5rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.toggle-icon-light {
+  font-size: 2.5rem;
+}
+.toggle-icon-dark {
+  font-size: 2.5rem;
+  color: red;
+}
 
 @media (min-width: 320px) {
   .nav-center {
