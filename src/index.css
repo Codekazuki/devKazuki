@@ -45,7 +45,7 @@ html {
   --extra-small-text: 0.7em;
   /* rest of the vars */
   --backgroundColor: var(--grey-50);
-  --darkBackgroundColor: var(--grey-900);
+  --darkBackgroundColor: #0a0f1b;
   --textColor: var(--grey-900);
   --borderRadius: 0.25rem;
   --letterSpacing: 1px;
@@ -232,6 +232,9 @@ ul {
 .active {
   color: var(--primary-500);
   /* background-color: var(--white); */
+}
+.res {
+  color: white;
 }
 
 .hero {

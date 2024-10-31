@@ -24,7 +24,7 @@ const Navbar = () => {
           <NavLink to='contactus' className='nav-link'>
             Contact Us
           </NavLink>
-          <NavLink to='resume' className='nav-link btn'>
+          <NavLink to='resume' className='nav-link btn res'>
             <span style={{ padding: " 0 auto", fontSize: "1.2rem" }}>
               <FaRegFileAlt />
             </span>
