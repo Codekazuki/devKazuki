@@ -45,6 +45,7 @@ html {
   --extra-small-text: 0.7em;
   /* rest of the vars */
   --backgroundColor: var(--grey-50);
+  --darkBackgroundColor: var(--grey-900);
   --textColor: var(--grey-900);
   --borderRadius: 0.25rem;
   --letterSpacing: 1px;
@@ -71,6 +72,12 @@ body {
   font-weight: 400;
   line-height: 1;
   color: var(--textColor);
+}
+/* dark mode */
+
+body.dark-theme {
+  background: var(--darkBackgroundColor);
+  color: var(--white);
 }
 p {
   margin: 0;
@@ -152,6 +159,9 @@ ul {
   font-weight: 700;
   letter-spacing: 2px;
 }
+.dark-theme .logo {
+  color: var(--white);
+}
 .logo:hover {
   text-shadow: 0 0 10px var(--primary-500), 0 0 20px var(--primary-500);
 }
@@ -175,6 +185,7 @@ ul {
   display: inline-block;
   max-width: 96px;
 }
+
 .btn-submit {
   cursor: pointer;
   color: var(--white);
@@ -210,6 +221,9 @@ ul {
   transition: var(--transition);
   letter-spacing: 2px;
 }
+.dark-theme .nav-link {
+  color: var(--white);
+}
 .nav-link:hover {
   color: var(--primary-500);
   text-shadow: 0 0 8px var(--primary-500), 0 0 12px var(--primary-500),
@@ -217,7 +231,7 @@ ul {
 }
 .active {
   color: var(--primary-500);
-  background-color: var(--white);
+  /* background-color: var(--white); */
 }
 
 .hero {
@@ -228,6 +242,9 @@ ul {
   justify-content: center;
   padding: 1rem;
   margin-bottom: 1rem;
+}
+.dark-theme .hero {
+  background: var(--grey-900);
 }
 .img-container {
   margin-top: 1rem;
@@ -245,6 +262,9 @@ ul {
   max-width: 35em;
   color: var(--grey-400);
 }
+.dark-theme .hero-title h3 {
+  color: var(--white);
+}
 
 .footer {
   color: var(--white);
@@ -255,6 +275,9 @@ ul {
   justify-content: space-around;
   height: 5rem;
   width: 100%;
+}
+.dark-theme .footer {
+  background: transparent;
 }
 .footer-mail {
   display: grid;
@@ -296,6 +319,9 @@ ul {
   align-items: center;
   min-height: 100vh;
 }
+.dark-theme .contact {
+  background: transparent;
+}
 form {
   background-color: var(--white);
   max-width: 600px;
@@ -304,6 +330,9 @@ form {
   border-radius: 8px;
   color: var(--primary-400);
   margin: 8px;
+}
+.dark-theme form {
+  color: var(--grey-900);
 }
 form h1 {
   font-size: 30px;
@@ -324,6 +353,9 @@ form .input-box {
   color: var(--primary-400);
   margin-top: 2px;
 }
+.dark-theme .input-box .field {
+  color: var(--grey-900);
+}
 .input-box .field-interest {
   width: 80%;
   height: 36px;
@@ -336,6 +368,10 @@ form .input-box {
   color: var(--primary-400);
   margin-top: 2px;
 }
+.dark-theme .input-box .field-interest {
+  color: var(--grey-900);
+}
+
 form .input-box .field.message {
   height: 6.5rem;
   resize: none;
@@ -350,6 +386,9 @@ form .input-box .field.message {
   margin-top: 1rem;
   font-size: 16px;
   font-weight: 600;
+}
+.dark-theme .btn-submit {
+  background: var(--grey-700);
 }
 .card-list {
   display: grid;
@@ -368,6 +407,9 @@ form .input-box .field.message {
   background: linear-gradient(135deg, var(--primary-200), var(--primary-300));
   border-radius: 8px;
   transition: var(--transition);
+}
+.dark-theme .card {
+  color: var(--grey-900);
 }
 
 .card:hover {
@@ -409,6 +451,9 @@ form .input-box .field.message {
   margin-bottom: 15px;
   transition: var(--transition);
 }
+.dark-theme .resume-text {
+  color: var(--white);
+}
 
 .resume-text:hover {
   color: var(--primary-400);
@@ -416,7 +461,7 @@ form .input-box .field.message {
 
 .resume-button {
   background-color: var(--primary-400);
-  color: white;
+  color: var(--white);
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -424,7 +469,10 @@ form .input-box .field.message {
   cursor: pointer;
   transition: var(--transition);
 }
-
+.dark-theme .resume-button {
+  color: var(--grey-900);
+  /* background: var(--white); */
+}
 .resume-button:hover {
   transform: scale(1.05);
   background-color: var(--white);
@@ -443,6 +491,9 @@ form .input-box .field.message {
   margin: 20px auto;
   transition: transform var(--transition);
 }
+.dark-theme .my-skill-container {
+  background: var(--grey-800);
+}
 
 .my-skill-container:hover {
   transform: scale(1.02);
@@ -456,6 +507,9 @@ form .input-box .field.message {
   color: var(--black);
 }
 
+.dark-theme .my-skill-title {
+  color: var(--white);
+}
 .my-skill-list {
   list-style-type: none;
   padding: 0;
@@ -486,6 +540,9 @@ form .input-box .field.message {
   cursor: pointer;
   transition: color 0.3s ease, transform 0.3s ease;
 }
+.dark-theme .my-skill-item {
+  color: var(--white);
+}
 
 .my-skill-item:hover {
   color: var(--grey-500);
@@ -502,10 +559,6 @@ form .input-box .field.message {
   background-color: var(--primary-500);
   border-radius: 50%;
 }
-.dark-theme {
-  background-color: var(--grey-700);
-  color: var(--grey-100);
-}
 
 .dark-toggle {
   background: transparent;
@@ -516,10 +569,10 @@ form .input-box .field.message {
 }
 .toggle-icon-light {
   font-size: 2.5rem;
+  color: var(--white);
 }
 .toggle-icon-dark {
   font-size: 2.5rem;
-  color: red;
 }
 
 @media (min-width: 320px) {
