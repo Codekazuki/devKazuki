@@ -1,3 +1,4 @@
+import { FaHeadset } from "react-icons/fa";
 const ContactUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -6,7 +7,12 @@ const ContactUs = () => {
   return (
     <section className='contact'>
       <form onSubmit={handleSubmit}>
-        <h1>Contact Form</h1>
+        <h1>
+          <span>
+            <FaHeadset />
+          </span>
+          Get In <span>Touch</span>
+        </h1>
         <div className='input-box'>
           <label htmlFor='name'>Full Name</label>
           <input
