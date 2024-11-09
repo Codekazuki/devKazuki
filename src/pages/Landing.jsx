@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import image from "../assets/hello.svg";
 import MySkill from "../components/MySkill";
 const intro =
@@ -5,13 +7,24 @@ const intro =
 const name = "Welcome! I’m Ayodele,";
 
 const Landing = () => {
+  const titleRef = useRef();
+  useEffect(() => {
+    gsap.fromTo(
+      titleRef.current,
+      { opacity: 0, y: -100, scale: 1.2 },
+      { opacity: 1, y: 0, scale: 1, duration: 2, ease: "bounce.out" }
+    );
+  }, []);
   return (
     <>
       <div style={{ margin: "2rem 0" }}>
         <section style={{ height: "75dvh" }} className='hero'>
           <div className='hero-center'>
             <div className='hero-title'>
-              <h1> Two Passions, One Purpose</h1>
+              <h1 ref={titleRef} className='hero-start'>
+                {" "}
+                Two Passions, One Purpose
+              </h1>
               <h3>
                 <span>{name}</span>
                 {intro}
