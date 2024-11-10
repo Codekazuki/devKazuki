@@ -18,13 +18,13 @@ const Landing = () => {
     );
     gsap.fromTo(
       imageRef.current,
-      { opacity: 0, x: -100 },
-      { opacity: 1, x: 0, duration: 1.5, ease: "power2.out", delay: 0.5 }
+      { opacity: 0, x: 100 },
+      { opacity: 1, x: 0, duration: 1.5, ease: "bounce.out", delay: 0.5 }
     );
     gsap.fromTo(
       textRef.current,
       { opacity: 0, x: -100 },
-      { opacity: 1, x: 0, duration: 1.5, ease: "power2.out" }
+      { opacity: 1, x: 0, duration: 1.5, ease: "elastic.out(1, 0.3)" }
     );
   }, []);
   return (
