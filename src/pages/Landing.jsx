@@ -8,11 +8,23 @@ const name = "Welcome! I’m Ayodele,";
 
 const Landing = () => {
   const titleRef = useRef();
+  const imageRef = useRef();
+  const textRef = useRef();
   useEffect(() => {
     gsap.fromTo(
       titleRef.current,
       { opacity: 0, y: -100, scale: 1.2 },
       { opacity: 1, y: 0, scale: 1, duration: 2, ease: "bounce.out" }
+    );
+    gsap.fromTo(
+      imageRef.current,
+      { opacity: 0, x: -100 },
+      { opacity: 1, x: 0, duration: 1.5, ease: "power2.out", delay: 0.5 }
+    );
+    gsap.fromTo(
+      textRef.current,
+      { opacity: 0, x: -100 },
+      { opacity: 1, x: 0, duration: 1.5, ease: "power2.out" }
     );
   }, []);
   return (
@@ -22,16 +34,15 @@ const Landing = () => {
           <div className='hero-center'>
             <div className='hero-title'>
               <h1 ref={titleRef} className='hero-start'>
-                {" "}
                 Two Passions, One Purpose
               </h1>
-              <h3>
+              <h3 ref={textRef}>
                 <span>{name}</span>
                 {intro}
               </h3>
             </div>
             <div className='img-container'>
-              <img className='img' src={image} alt='' />
+              <img ref={imageRef} className='img' src={image} alt='' />
             </div>
           </div>
         </section>
