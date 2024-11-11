@@ -28,18 +28,18 @@ export const recentCompany = [
 
 export const recentProjects = [
   {
-    ProjectName: "PollEasy",
+    projectName: "PollEasy",
     id: 1,
     image: "prunedge.png",
   },
   {
-    ProjectName: "Nakise",
+    projectName: "Nakise",
     id: 2,
 
     image: "gomycode.png",
   },
   {
-    ProjectName: "ZestPayment",
+    projectName: "ZestPayment",
     id: 3,
 
     image: "pacific.png",

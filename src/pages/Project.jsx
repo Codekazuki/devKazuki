@@ -3,10 +3,10 @@ import Card from "../components/Card";
 
 const Project = () => {
   const experienceChart = recentProjects.map((item) => {
-    const { id, ProjectName, image } = item;
+    const { id, projectName, image } = item;
     return (
       <section key={id}>
-        <Card ProjectName={ProjectName} image={image} />
+        <Card projectName={projectName} image={image} />
       </section>
     );
   });
