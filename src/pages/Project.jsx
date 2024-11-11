@@ -1,12 +1,12 @@
-import { recentCompany } from "../assets/data";
+import { recentProjects } from "../assets/data";
 import Card from "../components/Card";
 
 const Project = () => {
-  const experienceChart = recentCompany.map((item) => {
-    const { id, name, role, role2, image } = item;
+  const experienceChart = recentProjects.map((item) => {
+    const { id, ProjectName, image } = item;
     return (
       <section key={id}>
-        <Card name={name} role={role} role2={role2} image={image} />
+        <Card name={ProjectName} image={image} />
       </section>
     );
   });
