@@ -22,7 +22,6 @@ export const recentCompany = [
     name: "Bi-Set Technologies",
     id: 4,
     role: "Facilitator",
-
     image: "pacific.png",
   },
 ];

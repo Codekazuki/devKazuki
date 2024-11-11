@@ -6,7 +6,7 @@ const Project = () => {
     const { id, ProjectName, image } = item;
     return (
       <section key={id}>
-        <Card name={ProjectName} image={image} />
+        <Card ProjectName={ProjectName} image={image} />
       </section>
     );
   });
