@@ -3,7 +3,7 @@ const Card = ({ name, image, role, role2, projectName }) => {
     <div className='card'>
       <div className='card-details'>
         <div className='card-logo'>
-          <img src={image} alt='' width='96px' />
+          <img src={image} alt='image broken' />
         </div>
         {name && <h3> Company:{name}</h3>}
         {projectName && <h3> Project:{projectName}</h3>}

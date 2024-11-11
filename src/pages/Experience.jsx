@@ -13,7 +13,7 @@ const Experience = () => {
   });
   return (
     <section>
-      <h1>Experiences </h1>
+      <h1 style={{ textAlign: "center" }}>Experiences </h1>
       <div className='card-list'>{experienceChart}</div>
       <Project />
     </section>
