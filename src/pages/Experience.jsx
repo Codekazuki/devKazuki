@@ -1,5 +1,6 @@
 import { recentCompany } from "../assets/data";
 import Card from "../components/Card";
+import Project from "./Project";
 
 const Experience = () => {
   const experienceChart = recentCompany.map((item) => {
@@ -14,6 +15,7 @@ const Experience = () => {
     <section>
       <h1>Experiences </h1>
       <div className='card-list'>{experienceChart}</div>
+      <Project />
     </section>
   );
 };
