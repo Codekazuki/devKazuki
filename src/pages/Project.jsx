@@ -12,7 +12,7 @@ const Project = () => {
   });
   return (
     <section>
-      <h1 style={{ textAlign: "center" }}>Projects</h1>
+      <h1 style={{ textAlign: "center", padding: "1rem" }}> My Projects</h1>
       <div className='card-list'>{experienceChart}</div>
     </section>
   );

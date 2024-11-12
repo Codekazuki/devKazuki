@@ -566,7 +566,7 @@ form .input-box .field.message {
   transform: translateY(-50%);
   height: 10px;
   width: 10px;
-  background-color: var(--primary-500);
+  background-color: var(--grey-500);
   border-radius: 50%;
 }
 
@@ -613,12 +613,12 @@ form .input-box .field.message {
   }
   .hero-center {
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
+
     place-items: center;
   }
   .hero-centerb {
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
+
     place-items: center;
   }
   .img-container {
