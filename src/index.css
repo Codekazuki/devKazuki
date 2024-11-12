@@ -319,27 +319,33 @@ ul {
 .contact {
   display: flex;
   justify-content: center;
-  background-color: var(--primary-100);
   align-items: center;
+  background-color: var(--primary-100);
   min-height: 100vh;
+  padding: 2rem;
+}
+.contact img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 8rem;
 }
 .dark-theme .contact {
   background: transparent;
 }
 form {
   background-color: var(--white);
-  max-width: 600px;
+  max-width: 400px;
   width: 100%;
-  padding: 25px 25px 30px;
+  padding: 2rem;
   border-radius: 8px;
   color: var(--primary-400);
-  margin: 8px;
+  margin-right: 8rem;
 }
 .dark-theme form {
   color: var(--grey-900);
 }
 form h1 {
-  font-size: 30px;
+  font-size: 1.8rem;
   text-align: center;
 }
 form .input-box {
