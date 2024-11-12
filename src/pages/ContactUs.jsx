@@ -1,11 +1,11 @@
 import { FaHeadset } from "react-icons/fa";
 const ContactUs = () => {
   return (
-    <section style={{ display: "flex" }}>
-      <div>
-        <img className='img2' src='/contact.svg' alt='' />
-      </div>
+    <>
       <div className='contact'>
+        <div>
+          <img className='img2' src='/contact.svg' alt='' />
+        </div>
         <form>
           <h1>
             <span>
@@ -57,7 +57,7 @@ const ContactUs = () => {
           <button className='btn-submit'>Submit</button>
         </form>
       </div>
-    </section>
+    </>
   );
 };
 
