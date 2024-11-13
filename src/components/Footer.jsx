@@ -2,21 +2,15 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
+import { MdOutlineMailOutline } from "react-icons/md";
 const Footer = () => {
   return (
     <div className='footer'>
-      <div className='footer-mail'>
-        <a
-          href='mailto:agbowurotoyin8@gmail.com'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Send me an email
-        </a>
-
+      <div>
         <p>
           Copyright &copy; 2024 Made by
           <a
+            className='name-footer'
             rel='noopener noreferrer'
             target='_blank'
             href='https://github.com/Codekazuki'
@@ -28,6 +22,13 @@ const Footer = () => {
       </div>
       <ul className='social-icons'>
         <li>
+          <a
+            href='mailto:agbowurotoyin8@gmail.com'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <MdOutlineMailOutline style={{ color: "white" }} />
+          </a>
           <a
             rel='noopener noreferrer'
             target='_blank'
