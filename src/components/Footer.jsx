@@ -6,7 +6,14 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div className='footer-mail'>
-        <h5>agbowurotoyin8@gmail.com</h5>
+        <a
+          href='mailto:agbowurotoyin8@gmail.com'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Send me an email
+        </a>
+
         <p>
           Copyright &copy; 2024 Made by
           <a
