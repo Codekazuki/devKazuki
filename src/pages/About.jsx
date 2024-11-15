@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import teaching from "../assets/teaching.svg";
 import deadline from "../assets/deadline.svg";
 import devguy from "../assets/dev-guy.svg";
@@ -24,15 +26,30 @@ const point5 =
   "  Committed to promoting best practices in web development and providing diverse learning opportunities for students and clients.";
 
 const About = () => {
+  const aboutRef = useRef();
+  const hiRef = useRef();
+  useEffect(() => {
+    gsap.fromTo(
+      aboutRef.current,
+      { opacity: 0, x: -100 },
+      { opacity: 1, x: 0, duration: 3.5, ease: "elastic.out(1, 0.2)" }
+    );
+    gsap.fromTo(
+      hiRef.current,
+      { opacity: 0, y: -100, scale: 1.2 },
+      { opacity: 1, y: 0, scale: 1, duration: 2, ease: "bounce.out" }
+    );
+  }, []);
+
   return (
     <section className='about'>
       <h1 style={{ textAlign: "center", padding: "2rem" }}>About Me</h1>
       <section className='hero'>
         <div className='hero-center'>
           <div className='hero-title'>
-            <h3>{intro}</h3>
+            <h3 ref={hiRef}>{intro}</h3>
           </div>
-          <div className='img-container'>
+          <div ref={aboutRef} className='img-container'>
             <img className='img' src={devguy} alt='' />
           </div>
         </div>
