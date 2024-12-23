@@ -598,12 +598,6 @@ form .input-box .field.message {
 /* responsiveness */
 /* responsiveness */
 /* responsiveness */
-@media (min-width: 320px) {
-}
-@media (min-width: 375px) {
-}
-@media (min-width: 425px) {
-}
 
 @media (min-width: 768px) {
   .nav-center {
