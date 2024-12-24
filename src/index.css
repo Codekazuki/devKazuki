@@ -645,7 +645,7 @@ form .input-box .field.message {
     background-color: indianred;
   }
 }
-@media (min-width: 360px) and (max-width: 479px) {
+@media only screen and (max-width: 480px) {
   .nav-center {
     flex-direction: column;
     justify-content: space-between;
@@ -657,6 +657,5 @@ form .input-box .field.message {
     font-size: clamp(1rem, 2vw, 2rem);
     justify-content: space-between;
     margin-top: 0;
-    /* background-color: rgb(92, 205, 96); */
   }
 }
