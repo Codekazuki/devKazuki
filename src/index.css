@@ -50,7 +50,7 @@ html {
   --borderRadius: 0.25rem;
   --letterSpacing: 1px;
   --transition: 0.3s ease-in-out all;
-  --max-width: 1024px;
+  --max-width: 100dvw;
   --fixed-width: 600px;
   --view-width: 100vw;
   /* box shadow*/
@@ -604,10 +604,12 @@ form .input-box .field.message {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: red;
   }
   .nav-links {
     flex-direction: row;
     margin-top: 0;
+    background-color: purple;
   }
   .hero-center {
     display: grid;
@@ -626,5 +628,34 @@ form .input-box .field.message {
   }
   .card-list {
     grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .nav-center {
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: yellow;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+    background-color: indianred;
+  }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .nav-center {
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(47, 0, 255);
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+    background-color: rgb(92, 205, 96);
   }
 }
