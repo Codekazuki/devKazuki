@@ -637,6 +637,10 @@ form .input-box .field.message {
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
+  .logo {
+    display: grid;
+    place-items: center;
+  }
   .nav-center {
     flex-direction: column;
     justify-content: space-between;
@@ -647,7 +651,7 @@ form .input-box .field.message {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 0;
-    background-color: indianred;
+    font-size: clamp(0.5rem, 2vw, 2rem);
   }
 }
 @media only screen and (max-width: 480px) {
