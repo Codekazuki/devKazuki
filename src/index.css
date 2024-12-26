@@ -157,7 +157,7 @@ ul {
   max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 1rem 2rem;
 }
 .logo {
@@ -218,7 +218,7 @@ ul {
 }
 .nav-links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 0.5rem;
   margin-top: 1rem;
 }
@@ -604,7 +604,7 @@ form .input-box .field.message {
 /* responsiveness */
 /* responsiveness */
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .nav-center {
     flex-direction: row;
     justify-content: space-between;
@@ -636,7 +636,7 @@ form .input-box .field.message {
   }
 }
 
-@media (min-width: 480px) {
+@media (max-width: 480px) {
   .logo {
     display: grid;
     place-items: center;
