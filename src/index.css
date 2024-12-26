@@ -636,7 +636,7 @@ form .input-box .field.message {
   }
 }
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) {
   .logo {
     display: grid;
     place-items: center;
@@ -654,7 +654,7 @@ form .input-box .field.message {
     font-size: clamp(0.5rem, 2vw, 2rem);
   }
 }
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .nav-center {
     flex-direction: column;
     justify-content: space-between;
