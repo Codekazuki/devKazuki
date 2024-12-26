@@ -50,9 +50,9 @@ html {
   --borderRadius: 0.25rem;
   --letterSpacing: 1px;
   --transition: 0.3s ease-in-out all;
-  --max-width: 100%;
+  --max-width: 1024px;
   --fixed-width: 600px;
-  --view-width: 100%;
+  --view-width: 100vw;
   /* box shadow*/
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -65,11 +65,6 @@ html {
 a {
   text-decoration: none;
 }
-html,
-body {
-  overflow-x: hidden;
-}
-
 body {
   background: var(--backgroundColor);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -157,7 +152,7 @@ ul {
   max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 1rem 2rem;
 }
 .logo {
@@ -603,3 +598,34 @@ form .input-box .field.message {
 /* responsiveness */
 /* responsiveness */
 /* responsiveness */
+
+@media (max-width: 768px) {
+  .nav-center {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+  }
+  .nav-links {
+    flex-direction: row;
+    margin-top: 0;
+  }
+  .hero-center {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+    gap: 4rem;
+  }
+  .hero-centerb {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-items: center;
+    gap: 2rem;
+  }
+  .img-container {
+    display: block;
+  }
+  .card-list {
+    grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+  }
+}
