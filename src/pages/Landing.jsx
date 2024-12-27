@@ -29,7 +29,7 @@ const Landing = () => {
   }, []);
   return (
     <>
-      <div style={{ margin: "2rem 0" }}>
+      <div>
         <section style={{ height: "75dvh" }} className='hero'>
           <div className='hero-center'>
             <div className='hero-title'>
