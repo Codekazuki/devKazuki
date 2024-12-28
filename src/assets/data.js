@@ -1,5 +1,11 @@
 export const recentCompany = [
   {
+    name: "Honeytreat Trade Academy",
+    id: 5,
+    role: "Instructor",
+    image: "HONEY.png",
+  },
+  {
     name: "Prunedge Technologies",
     id: 1,
     role: "Software Trainee",
