@@ -155,12 +155,7 @@ ul {
   flex-direction: column;
   padding: 1rem 2rem;
 }
-.logo {
-  font-size: clamp(1.5rem, 3vw, 3rem);
-  color: var(--primary-500);
-  font-weight: 700;
-  letter-spacing: 2px;
-}
+
 .dark-theme .logo {
   color: var(--white);
 }
@@ -603,7 +598,6 @@ form .input-box .field.message {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: yellow;
   }
 }
 @media (min-width: 375px) {
@@ -611,7 +605,7 @@ form .input-box .field.message {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
+
     width: 100%;
   }
   .img-container {
@@ -624,12 +618,17 @@ form .input-box .field.message {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: purple;
   }
   .hero-center {
     display: grid;
 
     place-items: center;
+  }
+  .logo {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    color: var(--primary-500);
+    font-weight: 700;
+    letter-spacing: 2px;
   }
   .hero-centerb {
     display: grid;
@@ -649,11 +648,20 @@ form .input-box .field.message {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: pink;
   }
   .nav-links {
     flex-direction: row;
     margin-top: 0;
+    font-size: 0.8rem;
+  }
+  .logo {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    color: var(--primary-500);
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  .btn {
+    font-size: 0.7rem;
   }
   .hero-center {
     display: grid;
@@ -679,11 +687,18 @@ form .input-box .field.message {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--backgroundColor);
   }
   .nav-links {
     flex-direction: row;
     margin-top: 0;
+    font-weight: bolder;
+    font-size: 1rem;
+  }
+  .logo {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    color: var(--primary-500);
+    font-weight: 700;
+    letter-spacing: 2px;
   }
   .hero-center {
     display: grid;
