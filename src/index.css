@@ -598,6 +598,16 @@ form .input-box .field.message {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background: red;
+  }
+  .hero-start {
+    margin-top: 2rem;
+  }
+  .logo {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    color: var(--primary-500);
+    font-weight: 700;
+    letter-spacing: 2px;
   }
 }
 @media (min-width: 375px) {
@@ -605,9 +615,16 @@ form .input-box .field.message {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
+    background: brown;
     width: 100%;
   }
+  .logo {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    color: var(--primary-500);
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
   .img-container {
     display: block;
   }
@@ -618,10 +635,10 @@ form .input-box .field.message {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    background: burlywood;
   }
   .hero-center {
     display: grid;
-
     place-items: center;
   }
   .logo {
@@ -648,6 +665,7 @@ form .input-box .field.message {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background: grey;
   }
   .nav-links {
     flex-direction: row;
@@ -687,6 +705,7 @@ form .input-box .field.message {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background: white;
   }
   .nav-links {
     flex-direction: row;
