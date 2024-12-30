@@ -1,7 +1,12 @@
 import { NavLink } from "react-router-dom";
-import { FaRegFileAlt } from "react-icons/fa";
+import { useRef } from "react";
+import { FaRegFileAlt, FaBars, FaTimes } from "react-icons/fa";
 import ThemeToggle from "./ThemeToggle";
 const Navbar = () => {
+  const navRef = useRef();
+  const showNavBar = () => {
+    navRef.current.classList.toggle("responsive-nav");
+  };
   return (
     <div className='nav-center'>
       <div>
@@ -10,7 +15,7 @@ const Navbar = () => {
         </NavLink>
       </div>
 
-      <div className='nav-links'>
+      <div ref={navRef} className='nav-links'>
         <NavLink to='/' className='nav-link'>
           Home
         </NavLink>
@@ -30,7 +35,13 @@ const Navbar = () => {
           <span>Resume</span>
         </NavLink>
         <ThemeToggle />
+        <button className='nav-btn nav-close' onClick={showNavBar}>
+          <FaTimes />
+        </button>
       </div>
+      <button className='nav-btn nav-open' onClick={showNavBar}>
+        <FaBars />
+      </button>
     </div>
   );
 };

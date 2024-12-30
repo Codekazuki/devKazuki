@@ -586,6 +586,19 @@ form .input-box .field.message {
 .toggle-icon-dark {
   font-size: 2.5rem;
 }
+.nav-open {
+}
+.nav-close {
+}
+.nav-btn {
+  padding: 5px;
+  background: transparent;
+  border: none;
+  color: var(--textColor);
+  outline: none;
+  font-size: 2rem;
+  display: none;
+}
 /* responsiveness */
 /* responsiveness */
 /* responsiveness */
@@ -637,6 +650,9 @@ form .input-box .field.message {
     width: 100%;
     background: burlywood;
   }
+  .nav-btn {
+    display: block;
+  }
   .hero-center {
     display: grid;
     place-items: center;
@@ -666,6 +682,9 @@ form .input-box .field.message {
     justify-content: space-between;
     align-items: center;
     background: grey;
+  }
+  .nav-btn {
+    display: none;
   }
   .nav-links {
     flex-direction: row;
