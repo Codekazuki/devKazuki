@@ -586,9 +586,9 @@ form .input-box .field.message {
 .toggle-icon-dark {
   font-size: 2.5rem;
 }
-.nav-open {
-}
-.nav-close {
+.responsive-nav {
+  flex-direction: column;
+  transform: translateY(0);
 }
 .nav-btn {
   padding: 5px;
@@ -598,6 +598,7 @@ form .input-box .field.message {
   outline: none;
   font-size: 2rem;
   display: none;
+  cursor: pointer;
 }
 /* responsiveness */
 /* responsiveness */
@@ -616,6 +617,15 @@ form .input-box .field.message {
   .hero-start {
     margin-top: 2rem;
   }
+  .nav-btn {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+  }
+  .responsive-nav {
+    display: flex;
+  }
   .logo {
     font-size: clamp(1.2rem, 3vw, 2rem);
     color: var(--primary-500);
@@ -630,6 +640,15 @@ form .input-box .field.message {
     align-items: center;
     background: brown;
     width: 100%;
+  }
+  .nav-btn {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+  }
+  .responsive-nav {
+    display: flex;
   }
   .logo {
     font-size: clamp(1.2rem, 3vw, 2rem);
@@ -653,6 +672,13 @@ form .input-box .field.message {
   .nav-btn {
     display: block;
   }
+  .nav-links {
+    display: none;
+  }
+  .responsive-nav {
+    display: flex;
+  }
+
   .hero-center {
     display: grid;
     place-items: center;
@@ -732,6 +758,7 @@ form .input-box .field.message {
     font-weight: bolder;
     font-size: 1rem;
   }
+
   .logo {
     font-size: clamp(1.5rem, 3vw, 3rem);
     color: var(--primary-500);

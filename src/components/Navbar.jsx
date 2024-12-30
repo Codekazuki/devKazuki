@@ -1,11 +1,12 @@
 import { NavLink } from "react-router-dom";
-import { useRef } from "react";
+import { useState } from "react";
 import { FaRegFileAlt, FaBars, FaTimes } from "react-icons/fa";
 import ThemeToggle from "./ThemeToggle";
 const Navbar = () => {
-  const navRef = useRef();
-  const showNavBar = () => {
-    navRef.current.classList.toggle("responsive-nav");
+  const [isNavVisible, setIsNavVisible] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavVisible((prev) => !prev);
   };
   return (
     <div className='nav-center'>
@@ -15,7 +16,7 @@ const Navbar = () => {
         </NavLink>
       </div>
 
-      <div ref={navRef} className='nav-links'>
+      <div className={`nav-links ${isNavVisible ? "responsive-nav" : ""}`}>
         <NavLink to='/' className='nav-link'>
           Home
         </NavLink>
@@ -35,13 +36,23 @@ const Navbar = () => {
           <span>Resume</span>
         </NavLink>
         <ThemeToggle />
-        <button className='nav-btn nav-close' onClick={showNavBar}>
+        <button
+          className='nav-btn nav-close'
+          onClick={toggleNav}
+          aria-label='Close navigation'
+        >
           <FaTimes />
         </button>
       </div>
-      <button className='nav-btn nav-open' onClick={showNavBar}>
-        <FaBars />
-      </button>
+      {!isNavVisible && (
+        <button
+          className='nav-btn nav-open'
+          onClick={toggleNav}
+          aria-label='Open navigation'
+        >
+          <FaBars />
+        </button>
+      )}
     </div>
   );
 };
