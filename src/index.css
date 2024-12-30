@@ -600,6 +600,9 @@ form .input-box .field.message {
   display: none;
   cursor: pointer;
 }
+.nav-close {
+  margin-left: 68px;
+}
 /* responsiveness */
 /* responsiveness */
 /* responsiveness */
@@ -713,6 +716,7 @@ form .input-box .field.message {
     display: none;
   }
   .nav-links {
+    display: flex;
     flex-direction: row;
     margin-top: 0;
     font-size: 0.8rem;
@@ -753,6 +757,7 @@ form .input-box .field.message {
     background: white;
   }
   .nav-links {
+    display: flex;
     flex-direction: row;
     margin-top: 0;
     font-weight: bolder;

@@ -17,6 +17,13 @@ const Navbar = () => {
       </div>
 
       <div className={`nav-links ${isNavVisible ? "responsive-nav" : ""}`}>
+        <button
+          className='nav-btn nav-close'
+          onClick={toggleNav}
+          aria-label='Close navigation'
+        >
+          <FaTimes />
+        </button>
         <NavLink to='/' className='nav-link'>
           Home
         </NavLink>
@@ -36,13 +43,6 @@ const Navbar = () => {
           <span>Resume</span>
         </NavLink>
         <ThemeToggle />
-        <button
-          className='nav-btn nav-close'
-          onClick={toggleNav}
-          aria-label='Close navigation'
-        >
-          <FaTimes />
-        </button>
       </div>
       {!isNavVisible && (
         <button
