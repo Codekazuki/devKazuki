@@ -639,8 +639,10 @@ form .input-box .field.message {
     font-weight: 700;
     letter-spacing: 2px;
   }
+  .social-icons {
+    display: flex;
+  }
   .social-icons a {
-    display: grid;
     font-size: 1rem;
   }
 }
@@ -692,6 +694,9 @@ form .input-box .field.message {
   .responsive-nav {
     display: flex;
   }
+  .social-icons {
+    display: flex;
+  }
 
   .hero-center {
     display: grid;
@@ -717,7 +722,7 @@ form .input-box .field.message {
   .social-icons a {
     display: flex;
     justify-content: space-between;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -734,6 +739,12 @@ form .input-box .field.message {
   .social-icons {
     display: flex;
     justify-content: space-around;
+  }
+  .social-icons a {
+    font-size: 1.5rem;
+  }
+  .footer p {
+    font-size: 1rem;
   }
 
   .nav-btn {
