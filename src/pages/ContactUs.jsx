@@ -1,5 +1,6 @@
 import { FaHeadset } from "react-icons/fa";
 import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 const ContactUs = () => {
