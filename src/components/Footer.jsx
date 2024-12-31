@@ -29,6 +29,8 @@ const Footer = () => {
           >
             <MdOutlineMailOutline style={{ color: "white" }} />
           </a>
+        </li>
+        <li>
           <a
             rel='noopener noreferrer'
             target='_blank'
@@ -38,6 +40,7 @@ const Footer = () => {
             <FaTwitter />
           </a>
         </li>
+
         <li>
           <a
             rel='noopener noreferrer'

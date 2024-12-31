@@ -275,6 +275,7 @@ ul {
   justify-content: space-around;
   height: 5rem;
   width: 100%;
+  font-size: clamp(0.8rem, 3vw, 2rem);
 }
 .dark-theme .footer {
   background: transparent;
@@ -618,7 +619,10 @@ form .input-box .field.message {
     background: red;
   }
   .hero-start {
-    margin-top: 2rem;
+    margin-top: 4rem;
+  }
+  .my-skill-container {
+    margin-top: 6rem;
   }
   .nav-btn {
     display: block;
@@ -634,6 +638,10 @@ form .input-box .field.message {
     color: var(--primary-500);
     font-weight: 700;
     letter-spacing: 2px;
+  }
+  .social-icons a {
+    display: grid;
+    font-size: 1rem;
   }
 }
 @media (min-width: 375px) {
@@ -672,6 +680,9 @@ form .input-box .field.message {
     width: 100%;
     background: burlywood;
   }
+  .my-skill-container {
+    margin-top: 4rem;
+  }
   .nav-btn {
     display: block;
   }
@@ -703,6 +714,11 @@ form .input-box .field.message {
   .card-list {
     grid-template-columns: 1fr;
   }
+  .social-icons a {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -712,6 +728,14 @@ form .input-box .field.message {
     align-items: center;
     background: grey;
   }
+  .my-skill-container {
+    margin-top: 2rem;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: space-around;
+  }
+
   .nav-btn {
     display: none;
   }
