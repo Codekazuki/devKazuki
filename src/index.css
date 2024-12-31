@@ -468,6 +468,9 @@ form .input-box .field.message {
 .dark-theme .resume-text {
   color: var(--white);
 }
+.dark-theme .nav-btn {
+  color: white;
+}
 
 .resume-text:hover {
   color: var(--primary-400);
