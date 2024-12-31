@@ -129,6 +129,15 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+form {
+  background-color: var(--white);
+  max-width: 400px;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+  color: var(--primary-400);
+  margin-right: 8rem;
+}
 .img2 {
   width: 50%;
 }
@@ -329,15 +338,7 @@ ul {
 .dark-theme .contact {
   background: transparent;
 }
-form {
-  background-color: var(--white);
-  max-width: 400px;
-  width: 100%;
-  padding: 2rem;
-  border-radius: 8px;
-  color: var(--primary-400);
-  margin-right: 8rem;
-}
+
 .dark-theme form {
   color: var(--grey-900);
 }
@@ -644,6 +645,14 @@ form .input-box .field.message {
   .social-icons a {
     font-size: 1rem;
   }
+  .img2 {
+    display: none;
+  }
+  form {
+    background-color: var(--white);
+    border-radius: 8px;
+    margin: 0 auto;
+  }
 }
 @media (min-width: 375px) {
   .nav-center {
@@ -672,6 +681,14 @@ form .input-box .field.message {
   .img-container {
     display: block;
   }
+  .img2 {
+    display: none;
+  }
+  form {
+    background-color: var(--white);
+    border-radius: 8px;
+    margin: 0 auto;
+  }
 }
 @media (min-width: 425px) {
   .nav-center {
@@ -680,6 +697,7 @@ form .input-box .field.message {
     align-items: center;
     width: 100%;
   }
+
   .my-skill-container {
     margin-top: 4rem;
   }
@@ -722,6 +740,14 @@ form .input-box .field.message {
     justify-content: space-between;
     font-size: 1.5rem;
   }
+  .img2 {
+    display: none;
+  }
+  form {
+    background-color: var(--white);
+    border-radius: 8px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 768px) {
@@ -758,6 +784,18 @@ form .input-box .field.message {
     color: var(--primary-500);
     font-weight: 700;
     letter-spacing: 2px;
+  }
+  form {
+    background-color: var(--white);
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 8px;
+    color: var(--primary-400);
+    margin-right: 8rem;
+  }
+  .img2 {
+    display: block;
   }
   .btn {
     font-size: 0.7rem;
