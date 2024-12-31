@@ -399,7 +399,7 @@ form .input-box .field.message {
 }
 .card-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
   padding: 1rem;
   margin: 0 auto;
@@ -409,7 +409,7 @@ form .input-box .field.message {
   align-items: center;
   justify-content: space-between;
   height: 50dvh;
-  max-width: 600px;
+  max-width: 90vw;
   padding: 1.5rem;
   margin: 1rem auto;
   background: linear-gradient(135deg, var(--primary-200), var(--primary-300));
@@ -616,7 +616,6 @@ form .input-box .field.message {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: red;
   }
   .hero-start {
     margin-top: 4rem;
@@ -651,7 +650,7 @@ form .input-box .field.message {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: brown;
+
     width: 100%;
   }
   .nav-btn {
@@ -680,7 +679,6 @@ form .input-box .field.message {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background: burlywood;
   }
   .my-skill-container {
     margin-top: 4rem;
@@ -731,7 +729,6 @@ form .input-box .field.message {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: grey;
   }
   .my-skill-container {
     margin-top: 2rem;
@@ -789,7 +786,6 @@ form .input-box .field.message {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: white;
   }
   .nav-links {
     display: flex;
