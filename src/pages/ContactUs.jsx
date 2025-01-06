@@ -16,7 +16,7 @@ const ContactUs = () => {
       .then(
         () => {
           form.current.reset();
-          toast.success("message sent to Ayo");
+          toast.success("message sent to Ayodele");
         },
         (error) => {
           console.log("FAILED...", error.text);
