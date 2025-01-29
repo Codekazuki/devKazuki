@@ -33,8 +33,8 @@ const Navbar = () => {
         <NavLink to='experience' className='nav-link'>
           Experience
         </NavLink>
-        <NavLink to='contactus' className='nav-link'>
-          Contact Us
+        <NavLink to='contactme' className='nav-link'>
+          Contact Me
         </NavLink>
         <NavLink to='resume' className='nav-link btn res'>
           <span style={{ padding: " 0 auto", fontSize: "1.2rem" }}>
