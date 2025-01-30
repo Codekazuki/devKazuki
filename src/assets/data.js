@@ -38,17 +38,18 @@ export const recentProjects = [
     projectName: "PollEasy",
     id: 1,
     image: "prunedge.png",
+    link: " https://apps.apple.com/ng/app/polleasy/id6443719312",
   },
   {
     projectName: "Nakise",
     id: 2,
 
-    image: "gomycode.png",
+    image: "prunedge.png",
   },
   {
     projectName: "ZestPayment",
     id: 3,
 
-    image: "pacific.png",
+    image: "prunedge.png",
   },
 ];
