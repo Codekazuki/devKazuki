@@ -2,21 +2,14 @@ export const recentCompany = [
   {
     name: "Honeytreat Trade Academy",
     id: 5,
-    role: "Instructor",
+    role: " Software Eng. Instructor",
     image: "HONEY.png",
   },
   {
-    name: "Prunedge Technologies",
-    id: 1,
-    role: "Software Trainee",
-    role2: "Software Engineer",
-    image: "prunedge.png",
-  },
-  {
-    name: "GomyCode",
-    id: 2,
+    name: "Bi-Set Technologies",
+    id: 4,
     role: "Facilitator",
-    image: "gomycode.png",
+    image: "pacific.png",
   },
   {
     name: "Pacific Professinals",
@@ -24,11 +17,19 @@ export const recentCompany = [
     role: "Software Engineer",
     image: "pacific.png",
   },
+
   {
-    name: "Bi-Set Technologies",
-    id: 4,
+    name: "GomyCode",
+    id: 2,
     role: "Facilitator",
-    image: "pacific.png",
+    image: "gomycode.png",
+  },
+  {
+    name: "Prunedge Technologies",
+    id: 1,
+    role: "Software Trainee",
+    role2: "Software Engineer",
+    image: "prunedge.png",
   },
 ];
 
