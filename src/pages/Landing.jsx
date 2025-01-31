@@ -37,7 +37,7 @@ const Landing = () => {
                 Two Passions, One Purpose
               </h1>
               <h3 ref={textRef}>
-                <span>{name}</span>
+                <span style={{ color: "red" }}>{name}</span>
                 {intro}
               </h3>
             </div>
