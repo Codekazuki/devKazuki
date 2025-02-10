@@ -63,7 +63,7 @@ const ContactUs = () => {
             <label htmlFor='interest'>What are you interested in?</label> <br />
             <select name='interest' className='field-interest' id='interest'>
               <option value='webdev'>Web Development</option>
-              <option value='trainig'>Training</option>
+              <option value='training'>Training</option>
               <option value='others'>Others</option>
             </select>
           </div>
